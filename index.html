@@ -1,26 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>ToDo</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <script src="./script.js" defer></script>
-    <title>Document</title>
-</head>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="./js/script.js" defer></script>
+  </head>
 
-<body>
-    <main>
-        <fieldset>
-            <legend>Storage and Cookie</legend>
-            <input type="text" id="input">
-            <button id="btn_save">Запомнить</button>
-            <button id="btn_remove">Удалить сохранение</button>
-            <p id="text">Запоминаю ваш текст</p>
-        </fieldset>
-    </main>
+  <body>
+    <header class="header">
+      <form class="todo-control">
+        <label
+          ><input class="header-input" type="text" placeholder="Какие планы?"
+        /></label>
+        <button class="header-button" id="add" type="submit"></button>
+      </form>
+    </header>
 
-</body>
-
+    <div class="todo-container">
+      <ul class="todo todo-list" id="todo"></ul>
+      <ul class="todo todo-completed" id="completed"></ul>
+    </div>
+  </body>
 </html>
